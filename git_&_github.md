@@ -24,4 +24,7 @@ reset only unstages, means it will not reflect changes in your file, for that
 
 * for commenting in *git commit -m "added file.pug" -m "some description"*
 
-this id to be undone
+**ls -la : list all files including hidden folders**
+
+**Only for modified files not for new ones**
+**NOTE - to add and commit at the same time do : git commit -am "message"**
