@@ -1,2 +1,2 @@
-# Checking branch feature in git
-now uploading in branch
+# Ubuntu Tricks
+* Some tips, tricks, hacks, & solutions for ubuntu
