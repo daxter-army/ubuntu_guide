@@ -35,7 +35,7 @@
 * *man psql*
 
 **user : daxter_army**
-**password : Daxter2000@**
+**password : *your_password***
 
 ## HEROKU
 * *sudo snap install --classic heroku*
