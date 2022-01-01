@@ -1,2 +1,2 @@
-# Ubuntu Tricks
-* Some tips, tricks, hacks, & solutions for ubuntu
+# Ubuntu Guide
+* Some tips, tricks, hacks, customizations and solutions for ubuntu.
