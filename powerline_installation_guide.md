@@ -1,8 +1,11 @@
-# powerline
+# Powerline
 
-## installing powerline
-### prerequisites
+## Installing Powerline
+### Prerequisites
 * python 3.x
+
+### Installation
+This guide is written with reference to ubuntu, however the setup process remains the same for the other distros/macOS.
 
 **1.** Install powerline and related files
 ```bash
@@ -14,8 +17,7 @@
 ```bash
   find / 2> /dev/null | grep powerline-daemon
 ```
-*Note the addresses ending with **powerline-daemon** and **powerline-daemon.service**, you will need them later.*
-*for me these are*
+*Note the addresses ending with **powerline-daemon** and **powerline-daemon.service**, you will need them later. For me, these are*
 ```bash
   /home/daxter/.local/lib/python3.8/site-packages/powerline/dist/systemd/powerline-daemon.service
   /home/daxter/.local/bin/powerline-daemon
@@ -25,7 +27,8 @@
 ```bash
   find / 2> /dev/null | grep powerline.sh
 ```
-*Note the address ending with **bash/powerline.sh**
+Note the address ending with **bash/powerline.sh**
+
 **NOTE:** This subjects to be changed depending upon which terminal you are using, the above line holds true for bash terminals. In zsh, you may wanna save the addess ending with **zsh/powerline.sh**
 
 **4.** Open your ~/.bashrc or ~/.bash_profile (or ~/.zshrc or ~/.zsh_profile on macOS). If it do not exists, create one.
@@ -37,13 +40,14 @@ Now in the file, append these lines at the end
   # powerline
   export PATH="$PATH:/home/daxter/.local/bin/"
   export LC_ALL=en_US.UTF-8
-  # when you are tuning powerline's default.json, append -r in the command below
+  # when you are tuning powerline's default.json, append -r in the command below, to see changes quickly, after closing and reopening the terminal
   powerline-daemon -q
   POWERLINE_BASH_CONTINUATION=1
   POWERLINE_BASH_SELECT=1
+  # put here location with respect to your system, the address you saved earlier
   source /home/daxter/.local/lib/python3.8/site-packages/powerline/bindings/bash/powerline.sh
 ```
-**5.** create the folloowing directories
+**5.** Create the folloowing directories
 ```bash
   mkdir -p ~/.config/powerline/colorschemes/
   mkdir -p ~/.config/powerline/themes/shell/
@@ -60,7 +64,8 @@ Now in the file, append these lines at the end
 
 **7.** Now you can run ```source ~/.bashrc``` and see the changes
 
-## installing custom powerline font
+## Installing custom Powerline fonts
+Now to remove those unknown letters in the terminal, we need to install custom powerline fonts
 **8.** Clone the powerline fonts repo
 ```bash
   git clone https://github.com/powerline/fonts.git --depth=1 powerline_fonts
