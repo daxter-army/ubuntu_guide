@@ -17,7 +17,7 @@ This guide is written with reference to ubuntu, however the setup process remain
 ```bash
   find / 2> /dev/null | grep powerline-daemon
 ```
-*Note the addresses ending with **powerline-daemon** and **powerline-daemon.service**, you will need them later. For me, these are*
+*Note the addresses ending with **powerline-daemon** and **powerline-daemon.service**, you will need them later. For me, these are:*
 ```bash
   /home/daxter/.local/lib/python3.8/site-packages/powerline/dist/systemd/powerline-daemon.service
   /home/daxter/.local/bin/powerline-daemon
@@ -27,7 +27,7 @@ This guide is written with reference to ubuntu, however the setup process remain
 ```bash
   find / 2> /dev/null | grep powerline.sh
 ```
-Note the address ending with **bash/powerline.sh**
+*Note the address ending with **bash/powerline.sh***
 
 **NOTE:** This subjects to be changed depending upon which terminal you are using, the above line holds true for bash terminals. In zsh, you may wanna save the addess ending with **zsh/powerline.sh**
 
