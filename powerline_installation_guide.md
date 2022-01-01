@@ -60,12 +60,14 @@ Now in the file, append these lines at the end
   gedit ~/.config/colorschemes/default.json
   gedit ~/.config/themes/shell/default.json
 ```
-*You can changes colors by editting ~/.config/powerline/themes/shell/default.json and can edit gedit ~/.config/powerline/colorschemes/default.json to show git status on your terminal*
+You can change **colors** by editting **~/.config/powerline/themes/shell/default.json** and can edit **~/.config/powerline/colorschemes/default.json** to show git status on your terminal.
 
-**7.** Now you can run ```source ~/.bashrc``` and see the changes
+**7.** Now you can run ```source ~/.bashrc``` and see the changes.
 
 ## Installing custom Powerline fonts
-Now to remove those unknown letters in the terminal, we need to install custom powerline fonts
+
+Now to remove those unknown letters in the terminal, we need to install custom powerline fonts.
+
 **8.** Clone the powerline fonts repo
 ```bash
   git clone https://github.com/powerline/fonts.git --depth=1 powerline_fonts
@@ -75,12 +77,12 @@ Now to remove those unknown letters in the terminal, we need to install custom p
 
 **10.** Open the preferences of your terminal and select any of the fonts we just installed some time ago, e.g *source pro*
 
-## after theses steps powerline should be working fine in your terminal, now you just need to add font in vscode to support the vscode terminal formatting
-**11.** Go here and download the font .zip file [github link](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.0.0/Meslo.zip) and name the folder as **Meslo**
-**12.** Move this folder to **/usr/share/fonts/truetype/**
-**13.** Hit ```sudo fc-cache -vf /usr/share/fonts/``` in the terminal
+## After these steps Powerline should be working fine in your terminal, now you just need to add font in vscode to support the vscode terminal formatting.
+**11.** Go here and download the font .zip file [github link](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.0.0/Meslo.zip) and name the folder as **Meslo**.
+**12.** Move this folder to **/usr/share/fonts/truetype/**.
+**13.** Hit ```sudo fc-cache -vf /usr/share/fonts/``` in the terminal.
 **14.** Add ```"terminal.integrated.fontFamily": "MesloLGM Nerd Font",``` in vscode's **settings.json** and save it.
 **15.** Changes should be now reflecting in the terminal, if not then restart your vscode.
 
-Now enjoy your new cool terminal!
-**Note:** You can run ```fc-list | grep -i "meslo"```, to see available fonts to install
+Now enjoy your new cool terminal 🎉 !
+**Note:** You can run ```fc-list | grep -i "meslo"```, to see available fonts to install.
